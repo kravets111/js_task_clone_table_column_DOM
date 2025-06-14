@@ -5,7 +5,7 @@
     - Run `npm run test:only -- -n` to run fast test ignoring linter;
     - Run `npm run test:only -- -l` to run fast test with additional info in console ignoring linter.
 
-### Task: Copy/Paste table column
+### Task: Copy/Paste table column  
 
 Clone and paste element to document... Easy? Okay, but what do you say when I aks you to clone and paste table column? This task is for real heroes!
 
