@@ -5,11 +5,14 @@ const tfoot = document.querySelector('tfoot tr');
 const table = document.querySelector('table');
 const rows = table.querySelectorAll('tbody tr');
 
-const newTh = document.createElement('th');
+const newThHead = document.createElement('th');
+const newThFoot = document.createElement('th');
 
-newTh.textContent = 'Position';
-thead.insertBefore(newTh.cloneNode(true), thead.lastElementChild);
-tfoot.insertBefore(newTh.cloneNode(true), tfoot.lastElementChild);
+newThHead.textContent = 'Position';
+newThFoot.textContent = 'Position';
+
+thead.insertBefore(newThHead, thead.lastElementChild);
+tfoot.insertBefore(newThFoot, tfoot.lastElementChild);
 
 rows.forEach((row) => {
   const cells = row.querySelectorAll('td');
